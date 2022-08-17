@@ -1,0 +1,102 @@
+<div class="d-flex align-items-start m-5">
+    <div class="nav flex-column nav-pills me-3 border rounded p-4" id="v-pills-tab" role="tablist"
+        aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-admin-tab" data-bs-toggle="pill" data-bs-target="#v-pills-admin"
+            type="button" role="tab" aria-controls="v-pills-admin" aria-selected="true">Admins</button>
+        <button class="nav-link" id="v-pills-staff-tab" data-bs-toggle="pill" data-bs-target="#v-pills-staff"
+            type="button" role="tab" aria-controls="v-pills-staff" aria-selected="false">Staffs</button>
+        <button class="nav-link" id="v-pills-student-tab" data-bs-toggle="pill" data-bs-target="#v-pills-student"
+            type="button" role="tab" aria-controls="v-pills-student" aria-selected="false">Students</button>
+        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+    </div>
+    <div class="tab-content mx-5 px-5 flex-grow-1 border rounded p-5" style="height: 25rem;" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-admin" role="tabpanel" aria-labelledby="v-pills-admin-tab"
+            tabindex="0">
+            <h2 class="text-center mb-5">Admins</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">View Admins</h5>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a routerLink="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Add Admin</h5>
+                            <p class="card-text">
+                                Adds a new member to admin.
+                            </p>
+                            <a routerLink="/register_admin" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-staff" role="tabpanel" aria-labelledby="v-pills-staff-tab" tabindex="0">
+            <h2 class="text-center mb-5">Staffs</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">View Staff</h5>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a routerLink="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Add Staff</h5>
+                            <p class="card-text">
+                                Adds a new member to staff.
+                            </p>
+                            <a routerLink="/register_staff" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-student" role="tabpanel" aria-labelledby="v-pills-student-tab"
+            tabindex="0">
+            <h3 class="text-center mb-5">Students</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">View Students</h5>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a routerLink="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Add Student</h5>
+                            <p class="card-text">
+                                Add a Student.
+                            </p>
+                            <a routerLink="/register_student" class="btn btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+            tabindex="0">
+            Settings
+        </div>
+    </div>
+</div>

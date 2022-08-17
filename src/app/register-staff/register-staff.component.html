@@ -1,0 +1,44 @@
+<div class="bg-image p-5" style="background-image: url('https://images.unsplash.com/photo-1604134967494-8a9ed3adea0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2Nob29sfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+    background-position: center;  background-repeat: no-repeat;  background-size: cover;">
+    <div class="card text-center py-2" style="width: 50%;margin: 3rem auto;">
+        <div class="card-body">
+            <h3 class="card-title mb-3">Register Staff</h3>
+            <form>
+                <div class="row mb-3">
+                    <label for="staff_id" class="col-sm-2 col-form-label">Staff ID</label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]="staff.staff_id" name="staff_id" type="text" class="form-control"
+                            id="staff_id" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]="staff.email" name="email" type="email" class="form-control" id="email"
+                            required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="password" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]="staff.password" name="password" type="password" class="form-control"
+                            id="password" required>
+                    </div>
+                </div>
+                <button type="submit" (click)="register_staff()" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+    <div *ngIf="message" class="alert alert-success alert-dismissible fade show" style="width: 50%; margin: 3rem auto;"
+        role="alert">
+        <strong>Success!!</strong> Staff Added Successfully.
+        <button type="button" (click)="removeMessage()" class="btn-close" data-bs-dismiss="alert"
+            aria-label="Close"></button>
+    </div>
+    <div *ngIf="error" class="alert alert-danger alert-dismissible fade show" style="width: 50%; margin: 3rem auto;"
+        role="alert">
+        <strong>Error!!</strong> Something unexpected happened.
+        <button type="button" (click)="removeError()" class="btn-close" data-bs-dismiss="alert"
+            aria-label="Close"></button>
+    </div>
+</div>
