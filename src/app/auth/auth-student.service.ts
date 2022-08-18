@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 })
 export class AuthStudentService {
 
-  private _registerStudentURL = "http://localhost:3000/api/student_register";
-  private _loginStudentURL = "http://localhost:3000/api/student_login"
+  private _registerStudentURL = "api/student_register";
+  private _loginStudentURL = "api/student_login"
   constructor(private http: HttpClient,
     private _route: Router) { }
 
